@@ -1,0 +1,322 @@
+@charset "utf-8";
+html{
+  font-size: 62.5%; /*16px * 62.5% = 10px */
+  scroll-behavior: smooth;
+}
+
+body{
+  color: #222222;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+/* header */
+
+header .header_wrapper {
+  display: flex;
+  width: 1200px;
+  max-width: 100%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .header_logo{
+  width: 280px;
+  height: auto;
+}
+
+header ul{
+  display: flex;
+  font-size: 21px;
+  text-transform: uppercase;
+  gap: 50px;
+  margin: 50px auto;
+}
+
+header ul li:hover {
+  color: #ffd61a;
+}
+
+
+/* main_visual */
+#main_visual{
+  position: relative
+}
+
+#main_visual img{
+  width: 100%;
+}
+
+#main_visual .catch_wrapper{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+  color:#fff;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+#main_visual .catch{
+  font-size: 5rem;
+  margin-bottom: 30px;
+}
+
+#main_visual h1{
+  font-size: 36px;
+  font-weight: initial;
+}
+
+/* section共通 */
+.sec_tit{
+  padding: 60px 0;
+  text-align: center;
+}
+
+
+.sec_tit h2 span {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+section:nth-child(2n+1) .sec_tit h2 span{
+  color: #ffd61a;
+}
+
+.sec_tit h2{
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+.sec_tit_body p {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.btn{
+  display: block;
+  width: 300px;
+  padding: 15px 0;
+  background-color: #ffd61a;
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 60px auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+/* about */
+
+.about_gallery{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 0;
+}
+
+.about_gallery img{
+  width: 100%;
+}
+
+/* course */
+.course_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.course_item>* {
+  width: 50vw;
+}
+
+.course_item{
+  display: flex;
+}
+
+.course_item.reverse{
+  flex-direction: row-reverse;
+}
+
+.course_detail_wrapper{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #fafafa;
+}
+
+.course_item.reverse .course_detail_wrapper{
+  justify-content: right;
+}
+
+.course_detail{
+  padding: 50px;
+}
+
+.course_tit{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.course_txt{
+  width: 440px;
+  text-align: left;
+  line-height: 2;
+}
+
+/* news */
+.news_item_list{
+  width: 960px;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  gap:30px;
+}
+
+.news_item {
+  font-size: 14px;
+}
+
+.news_date{
+  margin: 30px 0 24px 0;
+}
+
+.news_item:hover{
+  color: orange;
+  border-color: orange;
+}
+
+.btn:hover{
+  background-color: #cacaca;
+  color: #ffd61a;
+}
+
+/* access */
+#access{
+  background-color: #fafafa;
+}
+
+#access .sec_tit{
+  padding-bottom: 0;
+}
+
+#access iframe{
+  width: 100%;
+}
+
+.access_info{
+  width: 520px;
+  margin: auto;
+  padding: 60px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.access_info dt{
+  width: 150px;
+  height: 20px;
+  margin: 0 0 30px;
+  text-transform: uppercase;
+}
+
+.access_info dd{
+  width: 370px;
+}
+
+/* contact */
+
+#contact .sec_tit{
+  padding-bottom: 40px;
+}
+
+table.form{
+  margin: 10px auto;
+  border-top: 2px solid #bfbfbf;
+  border-bottom: 2px solid #bfbfbf;
+  font-size: 14px;
+}
+
+table.form th, table.form td{
+  padding: 8px;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+
+table.form th{
+  width: 240px;
+  padding-left: 16px;
+  text-align: left;
+  border-right: 1px solid #bfbfbf;
+}
+
+table.form td{
+  width: 400px;
+  height: 36px;
+  position: relative;
+}
+
+table.form input[type*="text"], table.form input[type*="email"], table.form select, textarea{
+  width: 328px;
+  padding: 0;
+  border: 1px solid #bfbfbf;
+}
+
+
+table.form input[type*="text"], table.form input[type*="email"], table.form select{
+  height: 36px;
+}
+
+table.form input[type*="checkbox"]{
+  width: 20px;
+  height: 20px;
+  border: solid 1bx #a0a0a0;
+  background-color: #f4f4f4;
+  border-radius: 20%;
+  position: absolute;
+  left: 8px
+}
+
+
+table.form label.motivation{
+  display: block;
+  padding-left: 50px;
+  padding-bottom: 24px;
+}
+
+table.form textarea{
+  vertical-align: top;
+}
+
+
+.form-btn{
+  margin: 30px auto 140px;
+}
+
+/* footer */
+footer{
+  background-color: #707070;
+  padding: 30px 0;
+}
+
+.copyright{
+  display:block;
+  color: #fff;
+  text-align: center;
+}
+
